@@ -29,4 +29,9 @@ public class CalcController {
         return String.format("%s - %s = %s", num1, num2, calcService.minus(num1, num2));
     }
 
+    @GetMapping(path = "/multiply")
+    public String multiply(@RequestParam int num1, @RequestParam int num2) {
+        return String.format("%s * %s = %s", num1, num2, calcService.multiply(num1, num2));
+    }
+
 }
