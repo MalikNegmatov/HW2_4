@@ -7,6 +7,6 @@ public interface CalcService {
 
     int multiply(int num1, int num2);
 
-    int divide(int num1, int num2);
+    double divide(int num1, int num2);
 
 }
